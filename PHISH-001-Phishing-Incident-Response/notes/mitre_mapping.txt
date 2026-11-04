@@ -1,0 +1,58 @@
+PHISH-001 - MITRE ATT&CK MAPPING
+
+==================================================
+Technique: Phishing
+Tactic: Initial Access
+==================================================
+
+Observed Activity:
+A simulated phishing email was created containing a
+suspicious URL and attachment.
+
+Evidence:
+email/original.eml
+urls/extracted.txt
+attachments/Password_Expiration_Notice.txt
+
+Assessment:
+The scenario demonstrates the concept of phishing as an
+initial-access technique.
+
+
+==================================================
+Technique: User Execution
+Tactic: Execution
+==================================================
+
+Observed Activity:
+The scenario models a user interacting with a phishing
+message and accessing a simulated URL.
+
+Evidence:
+Simulated email and controlled HTTP server activity.
+
+Assessment:
+This demonstrates the user-interaction component of a
+phishing scenario.
+
+No malicious executable was used.
+
+
+==================================================
+Network Activity
+==================================================
+
+Observed Activity:
+A controlled HTTP request was generated against the local
+training server.
+
+Evidence:
+pcap/phish-001.pcap
+notes/network_analysis.txt
+
+Assessment:
+Network traffic was captured and analyzed to demonstrate
+incident-response network forensics.
+
+This traffic represents a controlled laboratory simulation
+and not malicious external infrastructure.

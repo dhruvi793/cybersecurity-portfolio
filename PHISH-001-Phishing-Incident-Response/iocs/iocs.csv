@@ -1,0 +1,6 @@
+type,IOC,source,cinfidence
+email,security-alert@training.test,email header,high domain,
+phishing-lab.test,email URL, high
+ URL, http://phishing-lab.test/update,email body, high
+ SHA256, cda3cce70a9776c8c2340a2215d3f43cff22bb98ead34c66462cd7656b54acbf , attachment, high
+

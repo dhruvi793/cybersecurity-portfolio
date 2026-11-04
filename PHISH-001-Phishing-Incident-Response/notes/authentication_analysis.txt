@@ -1,0 +1,26 @@
+PHISH-001 - Email Authentication Analysis
+
+SPF
+----
+Result: Not available for the simulated training domain.
+Evidence: No SPF record was available through DNS.
+Assessment: SPF authentication cannot be established from this artifact.
+
+DKIM
+----
+Result: Not present.
+Evidence: No DKIM-Signature header was included in the simulated email.
+Assessment: DKIM validation cannot be performed.
+
+DMARC
+-----
+Result: Not available for the simulated training domain.
+Evidence: No public DMARC record was available.
+Assessment: DMARC policy enforcement cannot be established.
+
+Overall Assessment
+------------------
+The simulated email intentionally contains incomplete authentication
+evidence. In a real investigation, SPF, DKIM and DMARC results should
+be obtained from the Authentication-Results header and verified
+against the relevant DNS records.

@@ -1,0 +1,21 @@
+Phish-001- email header analysis
+from: 
+security-alert@training.test
+to:
+analyst@training.test
+subject:
+urgent: password expiration notice
+date: 
+thu, 13 aug 2026 14:02:11 +0000
+message-id:
+<phish-001-20260813@training.test>
+return-path:
+security-alert@training.test
+reply-to:
+security-alert@training.test
+authentication results:
+not present in the simulated email artifact.
+recieved headers:
+not present in trhe simulated email artifact.
+initial assessment:
+the available headers provide basic sender, recipient, timestamp, and message identification information. complete mail-transfer and authentication headers are unavailable in this simulated artifact, so SPF/DKIM/DMARC results cannot be independently validated from the emailitself.

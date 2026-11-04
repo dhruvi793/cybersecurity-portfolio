@@ -1,0 +1,146 @@
+PHISH-001 - INCIDENT RESPONSE PLAN
+
+==================================================
+1. DETECTION
+==================================================
+
+The incident was detected through analysis of a simulated
+phishing email.
+
+Initial indicators included:
+
+- Suspicious sender address
+- Password-expiration themed subject
+- Suspicious URL
+- Attached file
+- Incomplete email authentication evidence
+
+Evidence collected:
+
+- original.eml
+- extracted URL
+- attachment
+- email headers
+
+
+==================================================
+2. ANALYSIS
+==================================================
+
+The email, URL and attachment were examined.
+
+Email headers were reviewed for:
+
+- Sender
+- Recipient
+- Return-Path
+- Reply-To
+- Message-ID
+- Authentication information
+
+The attachment was examined using:
+
+- file
+- sha256sum
+- exiftool
+- strings
+
+Network activity associated with the controlled simulation
+was captured using tcpdump and analyzed using tshark and
+Wireshark.
+
+Evidence:
+
+- pcap/phish-001.pcap
+- iocs/iocs.csv
+- iocs/ioc_enrichment.txt
+
+
+==================================================
+3. CONTAINMENT
+==================================================
+
+Recommended containment actions for a real organization:
+
+1. Quarantine the phishing email.
+2. Search mailboxes for matching sender, subject and URL.
+3. Block confirmed malicious domains and URLs.
+4. Prevent further delivery of matching messages.
+5. Identify users who interacted with the message.
+6. If credentials were entered, immediately reset affected
+   credentials and revoke active sessions.
+7. Review authentication logs for suspicious activity.
+
+For this laboratory exercise, no real user accounts or
+credentials were affected.
+
+
+==================================================
+4. ERADICATION
+==================================================
+
+Recommended eradication actions:
+
+1. Remove malicious or suspicious email messages.
+2. Remove associated files from affected endpoints.
+3. Remove malicious browser artifacts if applicable.
+4. Block identified indicators.
+5. Search for additional instances of the same indicators.
+6. Verify that no persistence mechanisms remain.
+
+No malicious persistence was created during this simulation.
+
+
+==================================================
+5. RECOVERY
+==================================================
+
+Recommended recovery actions:
+
+1. Restore affected systems to a known-good state if required.
+2. Reset compromised credentials where applicable.
+3. Re-enable normal network access after validation.
+4. Monitor affected users and systems.
+5. Review authentication and endpoint telemetry.
+6. Confirm that identified indicators are no longer active.
+
+
+==================================================
+6. LESSONS LEARNED
+==================================================
+
+The investigation demonstrates the importance of:
+
+- Email header analysis
+- SPF/DKIM/DMARC validation
+- URL analysis
+- File hashing
+- Metadata analysis
+- Network traffic capture
+- IOC documentation
+- MITRE ATT&CK mapping
+- Incident response procedures
+
+Potential improvements include:
+
+- Strong email filtering
+- Effective SPF/DKIM/DMARC configuration
+- Multi-factor authentication
+- User security awareness training
+- Centralized logging
+- Endpoint detection and response
+- Regular phishing simulations
+- Faster IOC blocking and threat hunting
+
+
+==================================================
+FINAL ASSESSMENT
+==================================================
+
+The PHISH-001 investigation successfully demonstrated a
+controlled phishing investigation workflow from initial
+detection through forensic analysis, IOC extraction,
+network analysis, ATT&CK mapping and incident response.
+
+No real credentials, users or external malicious systems
+were involved.

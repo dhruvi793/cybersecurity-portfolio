@@ -1,0 +1,34 @@
+PHISH-001 - Network Traffic Analysis
+
+A controlled and harmless HTTP service was created inside the
+cybersecurity training lab.
+
+The service was bound to TCP port 8080.
+
+A simulated client request was generated using curl.
+
+Network traffic was captured using tcpdump and saved as:
+
+pcap/phish-001.pcap
+
+The PCAP was analyzed using tshark and Wireshark.
+
+Observed Protocol:
+HTTP
+
+Observed Destination Port:
+8080
+
+Observed Activity:
+HTTP GET requests followed by HTTP responses.
+
+Evidence:
+pcap/phish-001.pcap
+
+Assessment:
+The network capture demonstrates the process of collecting and
+analyzing network evidence associated with a simulated phishing
+investigation.
+
+No real phishing infrastructure or external malicious system
+was contacted during this experiment.

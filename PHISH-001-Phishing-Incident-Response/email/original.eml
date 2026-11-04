@@ -1,0 +1,28 @@
+from: security-alert@training.test
+to: analyst@training.test
+subject: urgent: password expiration notice
+date: thu, 13 Aug 2026 14:02:11 +0000
+message-id: <phish-001-20260812@training.test>
+return-path: <security-alert@training.test>
+reply-to: security-alert@training.test
+mime-version: 1.0
+content-type: text/plains; charset="UTF - 8"
+
+Hello,
+
+THis is a simulated security notification for the PHISH-001 investigation lab.
+
+Your account password is scheduled for expiration.
+
+PLease review the security notification using the following LAB URL:
+
+http://phishing-lab.test/update
+
+attachment:
+password_expiration_notice.txt
+
+This email is part of an unauthorized cybersecurity training excersice.
+No real credentials should be entered.
+
+REgards,
+Security Team

@@ -1,0 +1,25 @@
+PHISH-001 - Attachment Analysis
+
+File:
+Password_Expiration_Notice.txt
+
+File Type:
+Plain ASCII text
+
+SHA-256:
+[INSERT YOUR SHA-256 HASH HERE]
+
+Metadata:
+Basic file metadata was examined using ExifTool.
+
+Strings:
+The file contains only the simulated training message.
+
+Malicious Behavior:
+No malicious behavior was identified.
+
+Assessment:
+The attachment is a benign simulated phishing artifact created
+for the authorized PHISH-001 investigation lab. It is being used
+to demonstrate forensic identification, hashing, metadata
+examination, and IOC documentation.

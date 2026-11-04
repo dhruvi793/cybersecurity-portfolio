@@ -1,0 +1,109 @@
+PHISH-001 - IOC ENRICHMENT
+
+==================================================
+IOC 1 - Sender Email
+==================================================
+
+Indicator:
+security-alert@training.test
+
+Type:
+Email Address
+
+Source:
+Email Header
+
+Confidence:
+High
+
+Analysis:
+The address appears in the From header of the simulated
+phishing email.
+
+External Reputation:
+Not checked because this is a controlled training domain.
+
+Assessment:
+Potential phishing sender within the simulated investigation.
+
+
+==================================================
+IOC 2 - Domain
+==================================================
+
+Indicator:
+phishing-lab.test
+
+Type:
+Domain
+
+Source:
+URL contained in email
+
+Confidence:
+High
+
+DNS Result:
+Non-resolving laboratory domain.
+
+Analysis:
+The domain is intentionally reserved for the controlled
+training exercise and does not represent real malicious
+infrastructure.
+
+Assessment:
+Simulation-only indicator.
+
+
+==================================================
+IOC 3 - URL
+==================================================
+
+Indicator:
+http://phishing-lab.test/update
+
+Type:
+URL
+
+Source:
+Email body
+
+Confidence:
+High
+
+Protocol:
+HTTP
+
+Analysis:
+The URL represents the simulated destination used in the
+phishing scenario.
+
+Assessment:
+Simulation-only URL.
+
+
+==================================================
+IOC 4 - Attachment Hash
+==================================================
+
+Indicator:
+[INSERT YOUR SHA-256 HASH]
+
+Type:
+SHA-256
+
+Source:
+Password_Expiration_Notice.txt
+
+Confidence:
+High
+
+Analysis:
+The hash uniquely identifies the simulated attachment.
+
+File Assessment:
+Benign training artifact.
+
+Assessment:
+Simulation-only file indicator.
+

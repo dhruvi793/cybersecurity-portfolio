@@ -1,0 +1,42 @@
+PHISH-001 - Investigation Timeline
+
+2026-08-13 14:02:11 UTC
+Simulated phishing email timestamp.
+
+2026-08-13 14:05:00 UTC
+Investigation initiated.
+
+2026-08-13 14:06:00 UTC
+Raw email headers reviewed.
+
+2026-08-13 14:08:00 UTC
+Sender and recipient information documented.
+
+2026-08-13 14:10:00 UTC
+SPF/DKIM/DMARC availability assessed.
+
+2026-08-13 14:12:00 UTC
+URL extracted from email.
+
+2026-08-13 14:15:00 UTC
+Attachment identified and SHA-256 hash calculated.
+
+2026-08-26
+IOC enrichment performed.
+
+2026-08-26
+Email, domain, URL and SHA-256 indicators documented.
+
+2026-08-26
+Observed activity mapped to relevant MITRE ATT&CK concepts.
+
+2026-08-26
+Incident response workflow documented.
+
+2026-08-26
+Containment, eradication and recovery recommendations
+documented.
+
+2026-08-26
+Lessons learned and security improvement recommendations
+documented.
